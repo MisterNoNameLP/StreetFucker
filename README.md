@@ -7,13 +7,10 @@ The source code is... creepy. So better dont even look at it ':)
 I hope u like it and have some fun with it :)
 
 # Installing
-If you have an internet card you can simply run:
+If you have an internet card installed you can simply run this command line to install the game into the current dir:
 ```
-pastebin get Jurnjfjq /tmp/sf_installer.lua
-/tmp/sf_installer INSTALL_PATH
+pastebin get Jurnjfjq .streenfucker_installer.lua; .streenfucker_installer.lua StreetFucker; rm .streenfucker_installer.lua
 ```
-`INSTALL_PATH` have to ge replaced by the path u want to install the game in.
-
 
 # Third Party
 With the v1.0 release it utilizes the [DoubleBuffering library](https://github.com/IgorTimofeev/DoubleBuffering) by IgorTimofeev to avoid graphical flickering.
