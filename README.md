@@ -1,7 +1,7 @@
 # StreetFucker
-Is a little multiplayer street fighting game for the Minecraft mod OpenComputer.
+StreetFucker is a little multiplayer street fighting game for the Minecraft mod OpenComputer.
 
-This is my first video game ever made a long while ago.
+This is my very first video game ever made, a long while ago.
 The source code is... creepy. So better dont even look at it ':)
 
 I hope u like it and have some fun with it :)
