@@ -1,6 +1,6 @@
 local usesDoubleBuffer = ...
 
-local version = " v1.0"
+local version = "v1.0.1"
 local isDevVersion = false
 
 local component = require("component")
