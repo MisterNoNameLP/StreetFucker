@@ -1,6 +1,6 @@
 local usesDoubleBuffer = ...
 
-local version = "v1.1.1"
+local version = "v1.1.2"
 local isDevVersion = false
 
 local component = require("component")
@@ -242,7 +242,7 @@ function DrawResetText()
 		fillSize = 1, aFill = {},
 		setSize = 1,
 		aSet = {
-			[1] = {30, 12, " Press R to restart ", 0x705000, 0xee6000},
+			[1] = {30, 12, " Press " .. unicode.upper(controls.game.reset) .. " to restart ", 0x705000, 0xee6000},
 	}}, 1, 9, gpu)
 end
 
