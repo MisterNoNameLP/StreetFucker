@@ -1,5 +1,7 @@
+![](https://raw.githubusercontent.com/MisterNoNameLP/StreetFucker/main/pics/streetFucker.png)
+
 # StreetFucker
-StreetFucker is a little multiplayer street fighting game for the Minecraft mod OpenComputer.
+StreetFucker is a little 1v1 local multiplayer street fighting game for the Minecraft mod OpenComputers.
 
 This is my very first video game ever made, a long while ago.
 The source code is... creepy. So better dont even look at it ':)
