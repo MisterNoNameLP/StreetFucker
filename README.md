@@ -1,7 +1,7 @@
-![](https://raw.githubusercontent.com/MisterNoNameLP/StreetFucker/main/pics/streetFucker.png)
+![](https://raw.githubusercontent.com/MisterNoNameLP/StreetFucker/main/pics/streetPuncher.png)
 
-# StreetFucker
-StreetFucker is a little 1v1 local multiplayer street fighting game for the Minecraft mod OpenComputers.
+# StreetPuncher
+StreetPuncher is a little 1v1 local multiplayer street fighting game for the Minecraft mod OpenComputers.
 
 This is my very first video game ever made, a long while ago.
 The source code is... creepy. So better dont even look at it ':)
@@ -10,7 +10,7 @@ I hope u like it and have some fun with it :)
 
 # Installing
 If you have an internet card installed you can simply run this command line to install the game into the current dir:
-`pastebin get Jurnjfjq .streenfucker_installer.lua; .streenfucker_installer.lua StreetFucker; rm .streenfucker_installer.lua`
+`pastebin get Jurnjfjq .streetpuncher_installer.lua; .streetpuncher_installer.lua StreetPuncher; rm .streetpuncher_installer.lua`
 
 # Third Party
 With the v1.0 release it utilizes the [DoubleBuffering library](https://github.com/IgorTimofeev/DoubleBuffering) by IgorTimofeev to avoid graphical flickering.
@@ -18,7 +18,7 @@ With the v1.0 release it utilizes the [DoubleBuffering library](https://github.c
 # License
 MIT License
 
-StreetFucker (c) MisterNoNameLP 2018-2022
+StreetPuncher (c) MisterNoNameLP 2018-2022
 
 DoubleBuffering Copyright (c) 2018 Igor Timofeev
 LIP (ini file parser) Copyright (c) 2012 Carreras Nicolas
