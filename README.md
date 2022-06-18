@@ -19,6 +19,7 @@ MIT License
 StreetFucker (c) MisterNoNameLP 2018-2022
 
 DoubleBuffering Copyright (c) 2018 Igor Timofeev
+LIP (ini file parser) Copyright (c) 2012 Carreras Nicolas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

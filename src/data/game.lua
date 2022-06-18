@@ -1,6 +1,6 @@
 local usesDoubleBuffer = ...
 
-local version = "v1.0.1"
+local version = "v1.1.1"
 local isDevVersion = false
 
 local component = require("component")
@@ -9,6 +9,7 @@ local system = require("os")
 local term = require("term")
 local keyboard = require("keyboard")
 local gpu
+local unicode = require("unicode")
 
 package.loaded.player = nil
 local player = require("player")
@@ -47,6 +48,8 @@ local resY = 25
 
 local sleepTime = 1 --caps it to about 20 fps
 
+local controls = require("libs/LIP").load("../controls.ini")
+
 --===== init =====--
 if usesDoubleBuffer then
 	gpu = gpuProxy
@@ -59,10 +62,14 @@ end
 function Start()
 	player.Start()
 	player2.Start()
+
+	player.right = tostring(controls.player1.right)
+	player.left = tostring(controls.player1.left)
+	player.punch = tostring(controls.player1.punch)
 	
-	player2.right = 'l'
-	player2.left = 'j'
-	player2.punch = '0'
+	player2.right = tostring(controls.player2.right)
+	player2.left = tostring(controls.player2.left)
+	player2.punch = tostring(controls.player2.punch)
 	
 	player2.body.aSet[1] = {2, 1, "   ", 0x000000, 0xbf2f11}
 	player2.body.aSet[2] = {3, 0, " "}
@@ -166,7 +173,7 @@ function LifeGui()
 	
 	gpu.setForeground(0xaaaaaa)
 	gpu.setBackground(0x00509f)
-	gpu.set(38, 1, version)
+	gpu.set(resX / 2 - unicode.len(version) / 2 + 1, 1, version)
 end
 
 function HitCheck(p1, p2)
@@ -309,12 +316,12 @@ while true do
 		gpu.drawChanges()
 	end
 	
-	if keyboard.isKeyDown('c') and isDevVersion then
+	if keyboard.isKeyDown(controls.game.quit) then
 		gpu.setForeground(0xaaaaaa)
 		gpu.setBackground(0x000000)
-		print("BREAK                       ")
+		--print("BREAK                       ")
 		break
-	elseif keyboard.isKeyDown('r') then
+	elseif keyboard.isKeyDown(controls.game.reset) then
 		Reset()
 	end
 	if keyboard.isKeyDown('t') then

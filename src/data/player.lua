@@ -1,9 +1,8 @@
 local Player = {}
 
-Player.left = 'a'
-Player.right = 'd'
-Player.jump = 'w'
-Player.punch = ' '
+Player.left = nil
+Player.right = nil
+Player.punch = nil
 
 Player.posX = 0
 Player.posY = 13
